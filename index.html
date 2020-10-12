@@ -1,0 +1,222 @@
+<html>
+
+<head>
+	<title>Front end challange</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<!--Header -->
+	<header class="bg-background-blue">
+		<div class="container">
+			<div class="sub-container">
+				<nav class="header-nav">
+					<div class="logo-wrap">
+						<a href="index.html">
+							<img src="assets/images/Logo@2x.png" alt="Logo" title="logo" />
+						</a>
+					</div>
+
+					<div class="search-profile-wrapper v-align">
+						<a href="javascript:void(0);">
+							<img src="assets/images/icn_search@2x.png" alt="Search" title="Search" />
+						</a>
+						<a href="javascript:void(0);">
+							<img src="assets/images/icn_person@2x.png" alt="Person" title="Person" />
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!--Header -->
+
+	<!--  Search Section-->
+	<section class="header-search bg-background-blue">
+		<div class="container">
+			<div class="sub-container">
+				<div class="search-heading heading">
+					Search any email address
+				</div>
+				<div class="meta-heading">
+					<span>Start here </span>- Look up the owner's name, photos and online profiles. See what you find!
+				</div>
+
+				<div class="search-form floating-label">
+					<!-- <form action="" class="frm-email"> -->
+					<input type="text" placeholder=" " id="searchtxt" name="email" class="searchbox">
+					<label class="">Email</label>
+					<div class="error-msg">Please add valid email address</div>
+					<button class="btn-result" id="btn-search">GO !</button>
+					<!-- </form> -->
+				</div>
+				<div>
+					<p class="search-note d-flex">
+						<span><img src="assets/images/lock@2x.png" /></span>
+						Enter Any Email Address. They won't be notified.
+					</p>
+				</div>
+			</div>
+	</section>
+	<!--  Search Section-->
+
+	<!-- Email lookup-->
+	<section class="email-lookup">
+		<div class="container">
+			<div class="sub-container">
+				<div class="email-lookup-heading heading txt-color-blu txt-center">
+					Reverse Email Lookup
+				</div>
+
+				<div class="remove-lookup-txt">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat.
+				</div>
+
+				<div class="list-wrap">
+					<ol class="reverse-list-wrap">
+						<li>
+							<div class="list-text-desc">
+								<p class="list-head txt-color-blu">
+									Lorem ipsum
+								</p>
+								<p class="list-meta-txt">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+								</p>
+								<div>
+						</li>
+
+						<li>
+							<div class="list-text-desc">
+								<p class="list-head txt-color-blu">
+									Lorem ipsum
+								</p>
+								<p class="list-meta-txt">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+								</p>
+								<div>
+						</li>
+
+						<li>
+							<div class="list-text-desc">
+								<p class="list-head txt-color-blu">
+									Lorem ipsum
+								</p>
+								<p class="list-meta-txt">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+								</p>
+								<div>
+						</li>
+
+						<li>
+							<div class="list-text-desc">
+								<p class="list-head txt-color-blu">
+									Lorem ipsum
+								</p>
+								<p class="list-meta-txt">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+								</p>
+								<div>
+						</li>
+
+						<li>
+							<div class="list-text-desc">
+								<p class="list-head txt-color-blu">
+									Lorem ipsum
+								</p>
+								<p class="list-meta-txt">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+								</p>
+								<div>
+						</li>
+
+						<li>
+							<div class="list-text-desc">
+								<p class="list-head txt-color-blu">
+									Lorem ipsum
+								</p>
+								<p class="list-meta-txt">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+								</p>
+								<div>
+						</li>
+					</ol>
+
+
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+	<!-- Email lookup-->
+
+	<!--Footer -->
+	<footer>
+		<div class="container">
+			<div class="sub-container d-flex m-flex">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat.
+				</p>
+				<p class="trems-policy txt-color-blu d-flex">
+					<a href="javascript:void(0)">Terms</a>
+					<span class="seprator"> | </span>
+					<a href="javascript:void(0)">Privacy</a>
+				</p>
+			</div>
+	</footer>
+	<!--Footer-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	
+
+	<!-- <script>
+		$(document).ready(function (e) {
+			$('#btn-search').click(function () {
+				var sEmail = $('#searchtxt').val();
+				// Checking Empty Fields
+				if ($.trim(sEmail).length == 0 ) {
+					$('.search-form').addClass('error');
+					return false;
+				}
+				if (validateEmail(sEmail)) {
+					$('.search-form').removeClass('error');
+				window.location = 'result.html?email=' + sEmail;	
+
+				}
+				else {
+					$('.search-form').addClass('error');
+					e.preventDefault();
+				}
+			});
+		});
+		// Function that validates email address through a regular expression.
+		function validateEmail(sEmail) {
+			var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			if (filter.test(sEmail)) {
+				
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+
+	</script> -->
+
+
+
+
+</body>
+
+</html>
